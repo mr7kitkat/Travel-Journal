@@ -11,11 +11,13 @@ export default function (props) {
       <div className="details">
         <div className="countryDetail">
           <img src={icon} alt="" className="icon" />
-          <h2>{props.country}</h2>
-          <a href={props.map_link} className="map_location"></a>
+          <p className="country">{props.country}</p>
+          <a href={props.map_link} className="map_location">
+            View on Google Maps
+          </a>
         </div>
 
-        <p className="locationName">{props.location}</p>
+        <h2 className="locationName">{props.location}</h2>
 
         <p className="travelPeriod">
           <span className="fromDate">{props.from_date}</span>-
