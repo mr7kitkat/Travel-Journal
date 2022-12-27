@@ -105,6 +105,14 @@ body {
   max-width: calc(125px * var(--multiplier));
   background: var(--fontColorLight);
   border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
 }
 
 /* Details style */
@@ -145,7 +153,7 @@ body {
   text-transform: capitalize;
 }
 
-.travelPeriod span {
+.travelPeriod {
   font-size: calc(10.24px * var(--multiplier));
   font-weight: 700;
   line-height: calc(12px * var(--multiplier));

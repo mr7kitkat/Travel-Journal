@@ -20,8 +20,7 @@ export default function (props) {
         <h2 className="locationName">{props.location}</h2>
 
         <p className="travelPeriod">
-          <span className="fromDate">{props.from_date}</span>-
-          <span className="toDate">{props.to_date}</span>
+          {props.from_date} - {props.to_date}
         </p>
 
         <p className="description">{props.description}</p>
